@@ -59,15 +59,14 @@ dateOptionsSelectElement.addEventListener("change", () => {
         case "yyyy-mm-dd":
             /*we use textContent to set the text content
             of HTML element, in this case it will match the 
-            above case clause */
-            currentDateParagraph.textContent = formattedDate;
-            /*we Split formattedDate into an array of substrings
+            above case clause 
+            we Split formattedDate into an array of substrings
             with the .split() method and use a "-" as the separator.
             .reverse() method is used to reverse an array in place.
             we chain the .reverse() method to the end of .split()
             finally Use the .join() method to join the reversed 
             array elements into a string and use a "-" for the separator.*/
-            formattedDate
+            currentDateParagraph.textContent = formattedDate
             .split("-")
             .reverse()
             .join("-");
